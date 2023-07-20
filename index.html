@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Project Kalkulator BMI</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container d-block p-3">
+      <h2>Kalkulator BMI</h2>
+      <div class="border border-my mt-3 p-3 bg-light" id="kalkulator">
+        <div>
+            <label for="jk">Jenis Kelamin <span class="text-danger">*</span></label>
+            <div class="d-flex">
+                <input type="radio" name="jk" id="pria">
+                <label for="pria" class="ms-1">Pria</label>
+                <input type="radio" name="jk" id="wanita" class="ms-2">
+                <label for="wanita" class="ms-1">Wanita</label>
+            </div>
+        </div>
+        <div class="d-block mt-1">
+            <label for="bb">Berat Badan (kg) <span class="text-danger">*</span></label>
+            <input type="number" class="form-control w-100 mt-1" id="bb" placeholder="Isilah angka Berat Badan Anda (kg)">
+        </div>
+        <div class="d-block mt-1">
+            <label for="bb">Usia (tahun) <span class="text-danger">*</span></label>
+            <input type="number" class="form-control w-100 mt-1" id="umur" placeholder="Isilah angka Umur Anda (tahun)">
+        </div>
+        <div class="d-block mt-1">
+            <label for="bb">Tinggi Badan (cm) <span class="text-danger">*</span></label>
+            <input type="number" class="form-control w-100 mt-1" id="tb" placeholder="Isilah angka Tinggi Badan Anda (kg)">
+        </div>
+        <div class="d-flex justify-content-end mt-3">
+            <button class="btn btn-primary" onclick="hitung()">Hitung BMI</button>
+            <button class="btn btn-secondary ms-2" onclick="reset()">Reset</button>
+        </div>
+      </div>
+      <div class="border border-my mt-3 p-3 bg-light text-center" id="hasil">
+        <h1>Hasil</h1>
+        <div id="ket" class=""></div>
+        <div id="nilai" class=""></div>
+        <div id="desk" class="mt-2"></div>
+      </div>
+    </div>
+  </body>
+  <script src="js/script.js"></script>
+</html>
