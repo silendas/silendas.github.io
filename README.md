@@ -21,9 +21,9 @@
   <img src="https://github-profile-trophy.vercel.app/?username=silendas&theme=radical&row=1&column=6" />
 </div>
 
-## 📈 Contribution Graph
+## 📈 Contribution Stats
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=silendas&theme=radical" />
+  <img src="https://activity-graph.herokuapp.com/graph?username=silendas&theme=radical&bg_color=20232a&hide_border=true" width="100%" alt="Contribution Graph" />
 </div>
 
 ## 💻 Programming Skills
