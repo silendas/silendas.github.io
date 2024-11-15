@@ -21,9 +21,9 @@
   <img src="https://github-profile-trophy.vercel.app/?username=silendas&theme=radical&row=1&column=6" />
 </div>
 
-## 📈 Contribution Stats
+## 🔥 Streak Stats
 <div align="center">
-  <img src="https://activity-graph.herokuapp.com/graph?username=silendas&theme=radical&bg_color=20232a&hide_border=true" width="100%" alt="Contribution Graph" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=silendas&theme=radical&hide_border=true" alt="GitHub Streak Stats"/>
 </div>
 
 ## 💻 Programming Skills
@@ -71,6 +71,9 @@
 </div>
 
 ## 👀 Profile Views
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=silendas&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
-</div>
+<p align="center">
+  <img src="https://img.shields.io/github/followers/silendas?style=for-the-badge&color=00ff00" alt="Followers"/>
+  <img src="https://img.shields.io/github/stars/silendas?style=for-the-badge&color=ffff00" alt="Stars"/>
+  <img src="https://komarev.com/ghpvc/?username=silendas&label=Views&color=ff69b4&style=for-the-badge" alt="Views"/>
+</p>
+
