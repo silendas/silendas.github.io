@@ -1,7 +1,5 @@
-# Hello, I'm Silendas! 👋
-
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=F7F7F7&width=435&lines=Welcome+to+my+GitHub+Profile!;I'm+a+Passionate+Developer;Always+learning+new+things" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=F7F7F7&width=435&lines=Hello+World! I'm+Silendas.;Welcome+to+my+GitHub+Profile!;I'm+a+Passionate+Developer;Always+learning+new+things" alt="Typing SVG" />
 </div>
 
 ## 👨‍💻 About Me
@@ -19,11 +17,6 @@
 ## 🏆 GitHub Trophy
 <div align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=silendas&theme=radical&row=1&column=6" />
-</div>
-
-## 🔥 Streak Stats
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=silendas&theme=radical&hide_border=true" alt="GitHub Streak Stats"/>
 </div>
 
 ## 💻 Programming Skills
