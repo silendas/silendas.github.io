@@ -4,12 +4,14 @@ on:
   push:
     branches: [ main ]
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
+      - name: Checkout 🛎️
         uses: actions/checkout@v3
 
       - name: Setup Node.js
@@ -17,17 +19,18 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install dependencies
+      - name: Install dependencies 📦
         run: |
           npm install
           npm ci
 
-      - name: Build and Export
-        run: |
-          npm run build
-          ls -la # untuk memeriksa isi direktori
+      - name: Build 🏗️
+        run: npm run build
+        
+      - name: Add .nojekyll file
+        run: touch ./out/.nojekyll
 
-      - name: Deploy
+      - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
