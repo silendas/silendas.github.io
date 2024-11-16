@@ -99,9 +99,9 @@ export default function Home() {
 
             {/* Navbar */}
             <nav className="fixed w-full z-50 bg-transparent backdrop-blur-sm">
-                <div className="max-w-6xl mx-auto px-4">
+                <div className="container mx-auto px-4">
                     <div className="flex justify-center py-4">
-                        <div className="flex space-x-8">
+                        <div className="flex space-x-4 md:space-x-8">
                             <button 
                                 onClick={() => scrollToSection('home')}
                                 className="text-gray-300 hover:text-blue-400 transition-colors"
@@ -168,14 +168,14 @@ export default function Home() {
             </section>
 
             {/* About Me Section */}
-            <section id="about" className="py-20 px-4 relative">
-                <div className="max-w-6xl mx-auto relative">
+            <section id="about" className="py-20 px-4 relative w-full">
+                <div className="container mx-auto relative">
                     <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
                     <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-8">
                         <div className="flex flex-col md:flex-row gap-8 items-center mb-8">
                             <div className="w-48 h-48 rounded-full overflow-hidden flex-shrink-0 relative">
                                 <Image 
-                                    src="/assets/images/me.jpg" 
+                                    src="assets/images/me.jpg"
                                     alt="Muhamad Yasmin Nul Hakim" 
                                     fill
                                     className="object-cover"
@@ -216,8 +216,8 @@ export default function Home() {
             </section>
 
             {/* Skills Section */}
-            <section id="skills" className="py-20 px-4 relative">
-                <div className="max-w-6xl mx-auto relative">
+            <section id="skills" className="py-20 px-4 relative w-full">
+                <div className="container mx-auto relative">
                     <h2 className="text-4xl font-bold text-center mb-12">Skills</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {skills.map((skill, index) => (
@@ -246,8 +246,8 @@ export default function Home() {
             </section>
 
             {/* Projects Section */}
-            <section id="projects" className="py-20 px-4 relative">
-                <div className="max-w-6xl mx-auto relative">
+            <section id="projects" className="py-20 px-4 relative w-full">
+                <div className="container mx-auto relative">
                     <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {projects.map((project, index) => (
@@ -271,8 +271,8 @@ export default function Home() {
             </section>
 
             {/* Contact Section */}
-            <section id="contact" className="py-20 px-4 relative">
-                <div className="max-w-4xl mx-auto relative">
+            <section id="contact" className="py-20 px-4 relative w-full">
+                <div className="container mx-auto relative">
                     <h2 className="text-4xl font-bold text-center mb-12">Let&apos;s Connect</h2>
                     <div className="grid md:grid-cols-2 gap-12">
                         <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6">
