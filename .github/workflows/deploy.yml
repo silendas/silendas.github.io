@@ -30,6 +30,7 @@ jobs:
       - name: Add .nojekyll file
         run: |
           touch ./out/.nojekyll
+          cp out/index.html out/404.html  # Tambahkan baris ini
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
