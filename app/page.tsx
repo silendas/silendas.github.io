@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { FaInstagram, FaGithub, FaLinkedin, FaTiktok, FaEnvelope } from 'react-icons/fa';
+import { FaInstagram, FaGithub, FaLinkedin, FaTiktok, FaEnvelope, FaHome, FaUser, FaCode, FaProjectDiagram, FaPhoneAlt } from 'react-icons/fa';
 import Image from 'next/image';
 
 export default function Home() {
@@ -104,33 +104,38 @@ export default function Home() {
                         <div className="flex space-x-4 md:space-x-8">
                             <button 
                                 onClick={() => scrollToSection('home')}
-                                className="text-gray-300 hover:text-blue-400 transition-colors"
+                                className="text-gray-300 hover:text-blue-400 transition-colors flex items-center"
                             >
-                                Home
+                                <FaHome className="text-xl md:hidden" />
+                                <span className="hidden md:block">Home</span>
                             </button>
                             <button 
                                 onClick={() => scrollToSection('about')}
-                                className="text-gray-300 hover:text-blue-400 transition-colors"
+                                className="text-gray-300 hover:text-blue-400 transition-colors flex items-center"
                             >
-                                About
+                                <FaUser className="text-xl md:hidden" />
+                                <span className="hidden md:block">About</span>
                             </button>
                             <button 
                                 onClick={() => scrollToSection('skills')}
-                                className="text-gray-300 hover:text-blue-400 transition-colors"
+                                className="text-gray-300 hover:text-blue-400 transition-colors flex items-center"
                             >
-                                Skills
+                                <FaCode className="text-xl md:hidden" />
+                                <span className="hidden md:block">Skills</span>
                             </button>
                             <button 
                                 onClick={() => scrollToSection('projects')}
-                                className="text-gray-300 hover:text-blue-400 transition-colors"
+                                className="text-gray-300 hover:text-blue-400 transition-colors flex items-center"
                             >
-                                Projects
+                                <FaProjectDiagram className="text-xl md:hidden" />
+                                <span className="hidden md:block">Projects</span>
                             </button>
                             <button 
                                 onClick={() => scrollToSection('contact')}
-                                className="text-gray-300 hover:text-blue-400 transition-colors"
+                                className="text-gray-300 hover:text-blue-400 transition-colors flex items-center"
                             >
-                                Contact
+                                <FaPhoneAlt className="text-xl md:hidden" />
+                                <span className="hidden md:block">Contact</span>
                             </button>
                         </div>
                     </div>
