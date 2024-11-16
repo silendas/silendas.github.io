@@ -209,10 +209,10 @@ export default function Home() {
                             <div>
                                 <h3 className="text-xl font-semibold mb-4">Hobbies</h3>
                                 <ul className="list-disc list-inside">
-                                    <li>Coding - Developing apps & websites</li>
-                                    <li>Travelling - Exploring new places</li>
-                                    <li>Badminton - Favorite sport</li>
-                                    <li>Reading - Expanding knowledge</li>
+                                    <li>Coding</li>
+                                    <li>Travelling</li>
+                                    <li>Badminton</li>
+                                    <li>Reading</li>
                                 </ul>
                             </div>
                         </div>
