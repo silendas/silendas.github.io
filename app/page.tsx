@@ -89,7 +89,7 @@ export default function Home() {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white relative">
+        <div className="min-h-screen w-full bg-gradient-to-b from-gray-900 to-gray-800 text-white">
             {/* Notification */}
             {showNotification && (
                 <div className="fixed top-14 right-4 bg-yellow-500 text-white px-6 py-3 rounded-lg shadow-lg z-50">
@@ -98,7 +98,7 @@ export default function Home() {
             )}
 
             {/* Navbar */}
-            <nav className="fixed w-full z-50 bg-transparent backdrop-blur-sm">
+            <nav className="fixed top-0 left-0 w-full z-50 bg-transparent backdrop-blur-sm">
                 <div className="container mx-auto px-4">
                     <div className="flex justify-center py-4">
                         <div className="flex space-x-4 md:space-x-8">
@@ -143,7 +143,7 @@ export default function Home() {
             </nav>
 
             {/* Hero Section */}
-            <section id="home" className="min-h-screen flex items-center justify-center px-4 relative">
+            <section id="home" className="min-h-screen w-full flex items-center justify-center px-4 sm:px-6 lg:px-8">
                 <div className="text-center relative">
                     <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
                         Muhamad Yasmin Nul Hakim
@@ -172,9 +172,9 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* About Me Section */}
-            <section id="about" className="py-20 px-4 relative w-full">
-                <div className="container mx-auto relative">
+            {/* About Section */}
+            <section id="about" className="w-full py-20 px-4 sm:px-6 lg:px-8">
+                <div className="max-w-7xl mx-auto">
                     <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
                     <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-8">
                         <div className="flex flex-col md:flex-row gap-8 items-center mb-8">
@@ -221,8 +221,8 @@ export default function Home() {
             </section>
 
             {/* Skills Section */}
-            <section id="skills" className="py-20 px-4 relative w-full">
-                <div className="container mx-auto relative">
+            <section id="skills" className="w-full py-20 px-4 sm:px-6 lg:px-8">
+                <div className="max-w-7xl mx-auto">
                     <h2 className="text-4xl font-bold text-center mb-12">Skills</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {skills.map((skill, index) => (
@@ -251,10 +251,10 @@ export default function Home() {
             </section>
 
             {/* Projects Section */}
-            <section id="projects" className="py-20 px-4 relative w-full">
-                <div className="container mx-auto relative">
+            <section id="projects" className="w-full py-20 px-4 sm:px-6 lg:px-8">
+                <div className="max-w-7xl mx-auto">
                     <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                         {projects.map((project, index) => (
                             <div key={index} className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 hover:transform hover:scale-105 transition-all duration-300">
                                 <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
@@ -276,10 +276,10 @@ export default function Home() {
             </section>
 
             {/* Contact Section */}
-            <section id="contact" className="py-20 px-4 relative w-full">
-                <div className="container mx-auto relative">
+            <section id="contact" className="w-full py-20 px-4 sm:px-6 lg:px-8">
+                <div className="max-w-7xl mx-auto">
                     <h2 className="text-4xl font-bold text-center mb-12">Let&apos;s Connect</h2>
-                    <div className="grid md:grid-cols-2 gap-12">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
                         <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6">
                             <h3 className="text-2xl font-semibold mb-6">Contact Info</h3>
                             <div className="space-y-4">
@@ -343,8 +343,10 @@ export default function Home() {
             </section>
 
             {/* Footer */}
-            <footer className="py-6 text-center text-gray-400 relative">
-                <p className="relative">&copy; {new Date().getFullYear()} Muhamad Yasmin Nul Hakim. All rights reserved.</p>
+            <footer className="w-full py-6 text-center text-gray-400">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <p>&copy; {new Date().getFullYear()} Muhamad Yasmin Nul Hakim. All rights reserved.</p>
+                </div>
             </footer>
         </div>
     );

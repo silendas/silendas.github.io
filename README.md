@@ -16,9 +16,10 @@
 
 ## 👨‍💻 About Me
 - 🔭 Working on **Web and Service API Development**
-- 🌱 Learning **Artificial Intelligence**
+- 🌱 Learning **Artificial Intelligence** 
 - 💬 Ask me about **JavaScript, TypeScript, Java, PHP, Dart**
 - ⚡ Fun fact: **I love coding and learning new technologies**
+- 🌐 Visit my portfolio: [https://silendas.github.io/silendas/](https://silendas.github.io/silendas/)
 
 ## 🔥 My Stats
 <div align="center">
@@ -53,4 +54,3 @@
   <img src="https://img.shields.io/github/stars/silendas?style=for-the-badge&color=ffff00" alt="Stars"/>
   <img src="https://komarev.com/ghpvc/?username=silendas&label=Views&color=ff69b4&style=for-the-badge" alt="Views"/>
 </div>
-
