@@ -11,7 +11,7 @@ export default function ProjectsSection({ projects }: ProjectsSectionProps) {
                 <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                     {projects.map((project: Project) => (
-                        <div key={project.id} className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6">
+                        <div key={project.id} className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 transition-transform duration-300 hover:scale-105">
                             <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
                             <p className="text-gray-400 mb-4">{project.description}</p>
                             <div className="flex flex-wrap gap-2 mb-4">

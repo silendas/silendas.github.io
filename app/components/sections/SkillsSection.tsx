@@ -11,7 +11,11 @@ export default function SkillsSection({ skills }: SkillsSectionProps) {
                 <h2 className="text-4xl font-bold text-center mb-12">Skills</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {skills.map((skill: Skill) => (
-                        <div key={skill.id} className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6">
+                        <div 
+                            key={skill.id} 
+                            className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6
+                            transition-transform duration-300 hover:scale-105"
+                        >
                             <h3 className="text-xl font-semibold mb-3">{skill.title}</h3>
                             <div className="w-full bg-gray-700 rounded-full h-2.5 mb-4 relative">
                                 <div 
