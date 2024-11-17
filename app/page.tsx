@@ -70,11 +70,6 @@ export default function Home() {
         }));
     };
 
-    const scrollToSection = (sectionId: string) => {
-        const element = document.getElementById(sectionId);
-        element?.scrollIntoView({ behavior: 'smooth' });
-    };
-
     return (
         <div className="min-h-screen overflow-x-hidden bg-gradient-to-b from-gray-900 to-gray-800 text-white">
             <Navbar />
