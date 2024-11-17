@@ -6,7 +6,7 @@ export default function HeroSection() {
         <section id="home" className="min-h-screen flex items-center justify-center px-2 sm:px-6 lg:px-8 relative overflow-hidden">
             <Stars />
             <div className="text-center relative z-10">
-                <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500 animated-border">
+                <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
                     Muhamad Yasmin Nul Hakim
                 </h1>
                 <p className="text-xl md:text-2xl text-gray-300 mb-8">
