@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Toaster } from 'react-hot-toast';
 
 export const metadata: Metadata = {
   title: "Muhamad Yasmin Nul Hakim - Portfolio",
@@ -24,6 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="flex flex-col min-h-screen">
         <main className="flex-grow">{children}</main>
+        <Toaster position="top-right" />
       </body>
     </html>
   );
