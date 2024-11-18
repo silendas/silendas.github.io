@@ -41,7 +41,7 @@ export default function RootLayout({
             },
             error: {
               iconTheme: {
-                primary: '#EF4444', // warna merah untuk error
+                primary: '#EF4444',
                 secondary: '#1F2937',
               },
             },

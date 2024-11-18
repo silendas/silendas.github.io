@@ -1,5 +1,6 @@
 import { initializeApp, getApps } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
+import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -10,22 +11,10 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID
 };
 
-// Cek apakah Firebase sudah diinisialisasi
-let app;
-if (!getApps().length) {
-  app = initializeApp(firebaseConfig);
-} else {
-  app = getApps()[0];
-}
+// Initialize Firebase
+const app = getApps().length ? getApps()[0] : initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
 
-// Inisialisasi Firestore
-export const db = getFirestore(app);
-
-// Tambahkan fungsi helper untuk memverifikasi koneksi
-export const verifyFirebaseConnection = () => {
-  if (!firebaseConfig.apiKey || !firebaseConfig.projectId) {
-    console.error('Firebase configuration is missing or incomplete');
-    return false;
-  }
-  return true;
-}; 
+export { auth, db };
+  
