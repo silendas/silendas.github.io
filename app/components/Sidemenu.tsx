@@ -42,6 +42,18 @@ export default function Sidemenu() {
           </li>
           <li>
             <Link 
+              href="/messages" 
+              className={`block p-2 rounded ${
+                pathname.includes('/messages') 
+                  ? 'bg-blue-600' 
+                  : 'hover:bg-gray-700'
+              } text-white`}
+            >
+              Pesan Masuk
+            </Link>
+          </li>
+          <li>
+            <Link 
               href="/projects" 
               className={`block p-2 rounded ${
                 pathname.includes('/projects') 
